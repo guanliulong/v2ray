@@ -2124,7 +2124,7 @@ blocked_hosts() {
 		echo
 		echo "备注: 广告拦截是基于 域名 拦截的..所以也许会造成浏览网页的时候出现部分元素留白..或者其他问题"
 		echo
-		echo "反馈问题或请求拦截更多域名: https://github.com/233boy/v2ray/issues"
+		echo "反馈问题或请求拦截更多域名: https://github.com/veip007/v2ray/issues"
 		echo
 		echo -e "当前广告拦截状态: $_info"
 		echo
@@ -3091,7 +3091,7 @@ uninstall_v2ray() {
 		echo
 		echo "如果你觉得这个脚本有哪些地方不够好的话...请告诉我"
 		echo
-		echo "反馈问题: https://github.com/233boy/v2ray/issues"
+		echo "反馈问题: https://github.com/veip007/v2ray/issues"
 		echo
 
 	elif [[ $is_uninstall_v2ray ]]; then
@@ -3135,7 +3135,7 @@ uninstall_v2ray() {
 		echo
 		echo "如果你觉得这个脚本有哪些地方不够好的话...请告诉我"
 		echo
-		echo "反馈问题: https://github.com/233boy/v2ray/issues"
+		echo "反馈问题: https://github.com/veip007/v2ray/issues"
 		echo
 	fi
 }
@@ -3661,7 +3661,7 @@ menu() {
 		echo
 		echo "帮助说明: https://v2ray66.com/post/1/"
 		echo
-		echo "反馈问题: https://github.com/233boy/v2ray/issues"
+		echo "反馈问题: https://github.com/veip007/v2ray/issues"
 		echo
 		echo "TG 群组: https://t.me/blog233"
 		echo
