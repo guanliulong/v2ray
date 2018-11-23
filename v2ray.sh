@@ -2903,7 +2903,7 @@ update_v2ray() {
 	mkdir -p /tmp/v2ray
 
 	v2ray_tmp_file="/tmp/v2ray/v2ray.zip"
-	v2ray_latest_ver="$(curl -H 'Cache-Control: no-cache' -s "https://api.github.com/repos/v2ray/v2ray-core/releases/latest" | grep 'tag_name' | cut -d\" -f4)"
+	v2ray_latest_ver="$(curl -H 'Cache-Control: no-cache' -s "https://api.github.com/repos/veip007/v2ray-core/releases/latest" | grep 'tag_name' | cut -d\" -f4)"
 
 	if [[ ! $v2ray_latest_ver ]]; then
 		echo
@@ -2920,7 +2920,7 @@ update_v2ray() {
 		echo
 		echo -e " $green 咦...发现新版本耶....正在拼命更新.......$none"
 		echo
-		v2ray_download_link="https://github.com/v2ray/v2ray-core/releases/download/$v2ray_latest_ver/v2ray-linux-${v2ray_bit}.zip"
+		v2ray_download_link="https://github.com/veip007/v2ray-core/releases/download/$v2ray_latest_ver/v2ray-linux-${v2ray_bit}.zip"
 
 		if ! wget --no-check-certificate -O "$v2ray_tmp_file" $v2ray_download_link; then
 			echo -e "
@@ -2950,7 +2950,7 @@ update_v2ray() {
 	fi
 }
 update_v2ray.sh() {
-	local latest_version=$(curl -H 'Cache-Control: no-cache' -s -L "https://raw.githubusercontent.com/233boy/v2ray/master/v2ray.sh" | grep '_version' -m1 | cut -d\" -f2)
+	local latest_version=$(curl -H 'Cache-Control: no-cache' -s -L "https://raw.githubusercontent.com/veip007/v2ray/master/v2ray.sh" | grep '_version' -m1 | cut -d\" -f2)
 
 	if [[ ! $latest_version ]]; then
 		echo
