@@ -2903,7 +2903,7 @@ update_v2ray() {
 	mkdir -p /tmp/v2ray
 
 	v2ray_tmp_file="/tmp/v2ray/v2ray.zip"
-	v2ray_latest_ver="$(curl -H 'Cache-Control: no-cache' -s "https://api.github.com/repos/veip007/v2ray-core/releases/latest" | grep 'tag_name' | cut -d\" -f4)"
+	v2ray_latest_ver="$(curl -H 'Cache-Control: no-cache' -s "https://api.github.com/repos/v2ray/v2ray-core/releases/latest" | grep 'tag_name' | cut -d\" -f4)"
 
 	if [[ ! $v2ray_latest_ver ]]; then
 		echo
